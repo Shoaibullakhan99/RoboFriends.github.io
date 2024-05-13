@@ -32,7 +32,7 @@ class App extends React.Component {
             return Robots.name.toLowerCase().includes(searchfield.toLowerCase());
         })
         return !Robots.length ?
-         <h1>Loading...</h1> :
+         <h1 style={{textAlign: "center"}}>Loading...</h1> :
                 <div className="tc" >
                     <h1 className="f2">RoboFriends</h1>
                     <Searchbox searchChange={this.onSearchChange} />
